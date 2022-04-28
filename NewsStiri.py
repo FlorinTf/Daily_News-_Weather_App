@@ -253,6 +253,13 @@ def getWeather():
     button_weather.place(x=5, y=5)
     getRefresh()
 
+    def Counter():
+        global counter
+        counter = False
+        top.destroy()
+        
+    top.protocol("WM_DELETE_WINDOW", Counter)
+
 class ButtonX():
 
     def __init__(self,a,b,c):
